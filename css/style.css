@@ -79,3 +79,45 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+/* Portfolio Grid Styling */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-tile {
+    padding: 20px;
+    background-color: #7c7c7c;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-tile a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.portfolio-tile a:hover {
+    background-color: #555;
+}
+
+.icon-container {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #333;
+}
